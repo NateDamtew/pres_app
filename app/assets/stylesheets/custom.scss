@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$Orange:#f15b28;
+
 header{
 	
 	background-color: transparent;
@@ -15,32 +17,22 @@ body{
 	background-size:100%;
 }
 
-section{
-	overflow:auto;
-
-}
-
-textarea{
-	
-	resize:vertical;
-}
-
 .center{
 	
 	text-align:center;
 	color:white;
+		h1{
+			
+			margin-bottom:10px;
+		}
 }
 
-.center h1{
-	
-	margin-bottom:10px;
-}
-
-h1,h2,h3,h4,h5,h6{
+.extended{
 	
 	line-height:1;
 }
-h1{
+h1{	
+	@extends .extended
 	font-size:100px;
 	letter-spaceing:0px;
 	margin-bottom:30px;
@@ -48,7 +40,8 @@ h1{
 	font-family:"MostlyMono";
 
 }
-h2{
+h2{ 
+	@extends .extended
 	font-size:1.3em;
 	letter-spaceing:-1px;
 	margin-bottom:30px;
@@ -73,22 +66,11 @@ p{
 	padding:-5px  0 0 10px;
 	font-family: "Always Forever";
 	font-weight:bold;
-}
-#logo:hover{
-	color:#fff;
-	text-decoration:none;
-}
-
-footer{
-	width:100%;
-	margin-top:45px;
-	padding-top:5px;
-	border-top:1px solid #eaeaea;
-	color:#777;
-	position:absolute;
-	bottom:0px;
-	right:50%;
-}
+		&:hover{
+			color:$Orange;
+			text-decoration:none;
+				}
+	}
 
 
 input[type=text] {
@@ -103,7 +85,7 @@ input[type=text] {
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 6px 10px 6px 40px;
-    color:#f15b28;
+    color:$Orange;
 	
 }
 
@@ -111,7 +93,6 @@ li a{
 
 	font-size:18px;
 	color:white;
-
 }
 
 .transparent{
@@ -120,6 +101,6 @@ li a{
 
 .btn-default{
 	background-color:white;
-	color:#f15b28;
-	border:#f15b28;
+	color:$Orange;
+	border-color:$Orange;
 }
