@@ -1,8 +1,8 @@
-body {
-    background-color: #e7e7e7;
-    text-align: center;
+#slideshow{
+  position: absolute;
+  width: 100%;
+  left: 0px;
 }
-
 
 #sampletext {
   position: absolute; 
@@ -11,12 +11,9 @@ body {
   margin-top : 200px;
 }
 
-
 #slideshow > div { 
+    width: 100%;
     position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    right: 0px; 
-    bottom: 0px; 
+    z-index: 0;
 }
 

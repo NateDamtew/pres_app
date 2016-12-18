@@ -1,21 +1,14 @@
 $wet: #34495e
-    
+$Orange:#f15b28
+$z-stack: site, globalHeader, modal,modalOverlay    
 .header
-  background: rgba(0,0,0,0.5)
+  background: rgba(0,0,0,1)
   display: inline-block
   padding: 15px
   transition: all .3s
-  position: fixed
-  width: 100%
-  top: 0px
-  left: 0px
-  
-  @media (min-width: 450px) and (max-width: 950px)
-    padding: 5px
-
 .logo
   border: 1px solid white
-  color: white
+  color: black
   cursor: default
   display: inline-block
   margin: 200px auto
@@ -43,7 +36,7 @@ $wet: #34495e
       float: none
     
     &::before
-      background: white
+      //background: white
       content: ''
       height: 1px
       position: absolute
@@ -58,7 +51,7 @@ $wet: #34495e
       display: none
       
     &::after
-      background: white
+      background: $Orange
       bottom: -3px
       content: ''
       height: 1px
@@ -75,7 +68,7 @@ $wet: #34495e
     a
       //background: red
       cursor: pointer
-      color: white
+      color: black
       display: block
       font-family: 'Lato', sans-serif
       font-size: 1.2em
@@ -84,4 +77,6 @@ $wet: #34495e
       text-transform: uppercase
         
       &:hover
-        color: white
+        text-decoration: none
+        color: $Orange
+        border-color:transparent
