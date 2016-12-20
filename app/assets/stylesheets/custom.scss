@@ -1,15 +1,18 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-body{
-	//padding-top:40px;
-}
 
  .navbar {
-background: rgba(0,0,0,0);
+background: rgba(255,255,255,1);
 border-color:transparent;
  }
 
- .newLine{
-position:Absolute;
- }
+#col1,#col2{
+	
+	margin:30px;
+	text-align:left;
+}
+h1{
+	margin-left:25px;
+	text-align:left;
+}

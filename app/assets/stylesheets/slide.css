@@ -1,19 +1,14 @@
 #slideshow{
-  position: absolute;
-  width: 100%;
-  left: 0px;
+	 margin:0px -90px;
+	 position: relative;
 }
-
-#sampletext {
-  position: absolute; 
-  font : italic bold 60px arial;
-  color : #aaaaaa;
-  margin-top : 200px;
-}
-
 #slideshow > div { 
-    width: 100%;
-    position: absolute; 
-    z-index: 0;
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    width: 100%
+
 }
 
