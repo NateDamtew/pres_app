@@ -1,6 +1,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+@font-face{
+	font-family : 'Pacifico';
+	src :asset-url('Pacifico.ttf') format ('truetype');
+}
 
  .navbar {
 background: rgba(255,255,255,1);
@@ -14,5 +18,15 @@ border-color:transparent;
 }
 h1{
 	margin-left:25px;
-	text-align:left;
+	text-align:center;
+	
+}
+.logo{
+	font-family: pacifico;
+	font-size:35px;
+	color: #f15b28;
+}
+
+.logo:hover{
+	color: #f15b28;
 }
