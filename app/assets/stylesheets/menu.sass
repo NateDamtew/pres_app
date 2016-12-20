@@ -1,17 +1,16 @@
 $wet: #34495e
-$Orange:#f15b28
+$orange:#f15b28
 $z-stack: site, globalHeader, modal,modalOverlay    
 .header
   background: rgba(0,0,0,1)
   display: inline-block
   padding: 15px
   transition: all .3s
+
 .logo
   color: black
-  cursor: default
-  display:inline-block
+  cursor: pointer
   margin: -10px 10px
-  padding: -10px 0px 0 10px
   text-align: left
   user-select: none
 
@@ -50,7 +49,7 @@ $z-stack: site, globalHeader, modal,modalOverlay
       display: none
       
     &::after
-      background: $Orange
+      background: $orange
       bottom: -3px
       content: ''
       height: 1px
@@ -77,5 +76,5 @@ $z-stack: site, globalHeader, modal,modalOverlay
         
       &:hover
         text-decoration: none
-        color: $O
+        color: $orange
         border-color:transparent
